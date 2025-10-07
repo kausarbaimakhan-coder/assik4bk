@@ -1,0 +1,75 @@
+
+h1 {
+    font-size: 32px;
+    color: #D81B60; 
+}
+p {
+    font-size: 16px;
+    color: #E91E63; 
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 28px; /* Размер для планшетов */
+    }
+    p {
+        font-size: 14px; /* Текст для планшетов */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 24px; /* Размер для мобильных */
+    }
+    p {
+        font-size: 12px; /* Текст для мобильных */
+    }
+}
+
+/* Task 1:  Layout */
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.box {
+    background-color: #F8BBD0; 
+    padding: 20px;
+    width: 30%;
+    border-radius: 8px; 
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-wrap: wrap; 
+    }
+    .box {
+        width: 48%; /* Два блока в одном ряду на планшете */
+    }
+}
+
+@media (max-width: 480px) {
+    .box {
+        width: 100%; /* Все блоки вертикально на мобильных */
+    }
+}
+
+/* Navbar */
+.navbar {
+    background-color: #F48FB1; 
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #880E4F; 
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #C2185B; 
+}
+
+/* Footer */
+footer {
+    background-color: #F8BBD0; 
+    color: #880E4F; 
+    padding: 10px 0;
+}
